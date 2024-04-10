@@ -6,7 +6,11 @@ vim.keymap.set('n', '<C-n>', '<Cmd>Neotree toggle<CR>')
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+-- Set Shift + H to go to the previous buffer
+vim.keymap.set('n', '<S-h>', ':bp<CR>', { desc = 'Go to previous buffer' })
 
+-- Set Shift + L to go to the next buffer
+vim.keymap.set('n', '<S-l>', ':bn<CR>', { desc = 'Go to next buffer' })
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
