@@ -7,7 +7,7 @@
 vim.opt.number = true
 -- You can also add relative line numbers, for help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -62,3 +62,10 @@ vim.opt.scrolloff = 10
 vim.opt.titlestring = '%t'
 -- Change cwd to the directory of the file being edited
 vim.opt.autochdir = true
+
+-- Spaces and other stuff
+--
+vim.opt.tabstop = 4 -- Set the number of spaces a tab in the file counts for
+vim.opt.softtabstop = 4 -- Set the number of spaces a tab counts for while performing editing operations
+vim.opt.shiftwidth = 4 -- Set the number of spaces used for each step of (auto)indent
+vim.opt.expandtab = true -- Use spaces instead of tabsim.opt.tabstop = 4
